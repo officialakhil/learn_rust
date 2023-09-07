@@ -1,0 +1,1 @@
+![idk some meme on rust learning as a python fan boi](https://i.imgur.com/ZiBZPFL.jpg)
