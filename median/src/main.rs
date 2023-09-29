@@ -51,12 +51,9 @@ mod tests {
     }
 
     #[test]
-    fn test_empty() -> Result<(), ErrorKind> {
-        assert_eq!(
-            merge_and_find_median(vec![], vec![]),
-            Err(ErrorKind::InvalidInput)
+    fn test_empty() {
+        assert!(
+            merge_and_find_median(vec![], vec![]).is_err_and(|err| err == ErrorKind::InvalidInput)
         );
-
-        Ok(())
     }
 }
